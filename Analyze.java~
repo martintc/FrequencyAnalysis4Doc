@@ -39,8 +39,4 @@ public class Analyze {
 		charList.printResults();
 	}
 
-	public String passResults () {
-		return charList.results();
-	}
-
 }

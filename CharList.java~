@@ -46,14 +46,6 @@ public class CharList {
 		}
 	}
 
-    public String results () {
-        String s = "Results\n" + "---------------\n";
-        for (Node n : list) {
-            s = s + n.getCharacter() + ": " + n.getCount() + "     " + percentage(n.getCount()) + "%" + "\n";
-        }
-        return s;
-    }
-
 	protected class Node {
 		 /*
 		  * Instance Variables

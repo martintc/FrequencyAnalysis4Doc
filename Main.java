@@ -6,7 +6,11 @@ public class Main {
 
     public static void main (String[] args) throws FileNotFoundException {
         Main main = new Main();
-        main.run();
+        if (args.length == 0) {
+		main.run();
+	} else if (args.length != 0) {
+		main.guiRun();
+	}
     }
 
     public void run () throws FileNotFoundException {
@@ -25,7 +29,10 @@ public class Main {
             System.out.println("Error occured!");
             System.exit(-1);
         }
-
     }
+
+	public void guiRun() {
+		View view = new View();
+	}
 
 }
